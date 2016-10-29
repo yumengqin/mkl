@@ -1,0 +1,353 @@
+{
+	"reason" : "success",
+	"result" : [
+		{
+			"cid" : "01",
+			"className" : "维您",
+			"keyword": "健康养生",
+			"proNum": "13",
+			"banner" :"http://www.wm18.com/data/afficheimg/1433376637367642419.jpg",
+			"intro":"维您品牌源于一个忙碌却不善表达的父亲对女儿的承诺，它低调却踏实，一如记忆中父亲的温暖手掌与拥抱，它走过美国、台湾，而今来到中国内地，只为如您一般的女性绽放阳光笑颜。",
+			"hot":[
+				{
+					"pid":"011",
+					"banImg":"http://www.wm18.com/data/afficheimg/1446775176523512318.jpg"
+				},
+				{
+					"pid":"040",
+					"banImg":"http://www.wm18.com/data/afficheimg/1439435507124777880.jpg"
+				},
+				{
+					"pid":"035",
+					"banImg":"http://www.wm18.com/data/afficheimg/1439435168823042022.jpg"
+				},
+				{
+					"pid":"039",
+					"banImg":"http://www.wm18.com/data/afficheimg/1439435050985819541.jpg"
+				}
+			],
+			"important":[
+				{
+					"title":"全家健康"
+				},
+				{
+					"title":"爱美人士"
+				}
+			]
+		},
+		{
+			"cid" : "02",
+			"className" : "LA CELLER",
+			"keyword": "美容护肤",
+			"proNum": "22",
+			"banner" :"http://www.wm18.com/data/afficheimg/1446859632620812220.jpg",
+			"intro":"不变的追求，源于大自然的启迪。萃取自然，用心创造奇迹。置身于万物世界，感受美丽的存在……让肌肤自由呼吸，呈现更别样光彩！",
+			"hot":[
+				{
+					"pid":"015",
+					"banImg":"http://www.wm18.com/data/afficheimg/1447030405958681674.jpg"
+				},
+				{
+					"pid":"016",
+					"banImg":"http://www.wm18.com/data/afficheimg/1439433141269337208.jpg"
+				},
+				{
+					"pid":"017",
+					"banImg":"http://www.wm18.com/data/afficheimg/1439433484468250903.jpg"
+				},
+				{
+					"pid":"018",
+					"banImg":"http://www.wm18.com/data/afficheimg/1439433169070316854.jpg"
+				}
+			],
+			"important":[
+			]
+		},
+		{
+			"cid" : "003",
+			"className" : "秘密花园",
+			"keyword": "美容护肤",
+			"proNum": "13",
+			"banner" :"http://www.wm18.com/data/afficheimg/1429142483942480091.jpg",
+			"intro":"坚持汲取自然植物的力量，以绿色原料、环保包装来缔造健康护肤理念",
+			"hot":[
+				{
+					"pid":"019",
+					"banImg":"http://www.wm18.com/data/afficheimg/1447030423500301893.jpg"
+				},
+				{
+					"pid":"020",
+					"banImg":"http://www.wm18.com/data/afficheimg/1439434282508514621.jpg"
+				},
+				{
+					"pid":"021",
+					"banImg":"http://www.wm18.com/data/afficheimg/1439434768342888340.jpg"
+				},
+				{
+					"pid":"022",
+					"banImg":"http://www.wm18.com/data/afficheimg/1439434736257951293.jpg"
+				}
+			],
+			"important":[
+			]
+		},
+		{
+			"cid" : "04",
+			"className" : "SONOKO",
+			"proNum": "13",
+			"keyword": "美容护肤",
+			"banner" :"http://www.wm18.com/data/afficheimg/1446846734101786954.jpg",
+			"intro":"1974年，日本美颜-料理研究家铃木莊能子，提出的美颜理论，并由此创立以美容与健康品牌——SONOKO莊能子。SONOKO莊能子以“不损伤肌肤、不过度护理”的理论为基础，研发出护肤品、彩妆产品，以及、保健品、健康食品等。",
+			"hot":[
+				{
+					"pid":"023",
+					"banImg":"http://www.wm18.com/data/afficheimg/1447030490028388549.jpg"
+				},
+				{
+					"pid":"024",
+					"banImg":"http://www.wm18.com/data/afficheimg/1439433216154970788.jpg"
+				},
+				{
+					"pid":"025",
+					"banImg":"http://www.wm18.com/data/afficheimg/1439432924074951914.jpg"
+				},
+				{
+					"pid":"026",
+					"banImg":"http://www.wm18.com/data/afficheimg/1439433862645282191.jpg"
+				}
+			],
+			"important":[
+			]
+		},
+		{
+			"cid" : "05",
+			"className" : "兰蔻",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "06",
+			"className" : "佳洁士",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "07",
+			"className" : "雅诗兰黛",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "08",
+			"className" : "爱可丝蔻",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "09",
+			"className" : "植村秀",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "10",
+			"className" : "克丽丝汀迪奥",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "11",
+			"className" : "欧舒丹",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "12",
+			"className" : "碧欧泉",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "13",
+			"className" : "资生堂",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "14",
+			"className" : "贝利达",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "15",
+			"className" : "欧丝特",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "16",
+			"className" : "PEYAN",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "17",
+			"className" : "海莎普",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "18",
+			"className" : "格拉芙",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "19",
+			"className" : "哈罗闪",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "20",
+			"className" : "韩束",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "21",
+			"className" : "施巴",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "22",
+			"className" : "歌诗美",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "23",
+			"className" : "chulala",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "24",
+			"className" : "简纯",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "25",
+			"className" : "安娜玛丽柏琳",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "26",
+			"className" : "悦木之源",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "27",
+			"className" : "吉百事",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "28",
+			"className" : "芭睿芭睿",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "29",
+			"className" : "M2",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "30",
+			"className" : "QUANIS克奥妮斯",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "30",
+			"className" : "悠斯晶",
+			"keyword": "美容护肤"
+		},
+		{
+			"cid" : "31",
+			"className" : "麦维丽康",
+			"keyword": "健康养生"
+		},
+		{
+			"cid" : "32",
+			"className" : "麦美兹",
+			"keyword": "健康养生"
+		},
+		{
+			"cid" : "33",
+			"className" : "龙粹",
+			"keyword": "健康养生"
+		},
+		{
+			"cid" : "34",
+			"className" : "万宴香",
+			"keyword": "健康养生"
+		},
+		{
+			"cid" : "35",
+			"className" : "nature‘s farm",
+			"keyword": "健康养生"
+		},
+		{
+			"cid" : "36",
+			"className" : "homes up",
+			"keyword": "家居日用"
+		},
+		{
+			"cid" : "37",
+			"className" : "homes up",
+			"keyword": "家居日用"
+		},
+		{
+			"cid" : "38",
+			"className" : "美洁卫",
+			"keyword": "家居日用"
+		},
+		{
+			"cid" : "38",
+			"className" : "ELLE",
+			"keyword": "家居日用"
+		},
+		{
+			"cid" : "39",
+			"className" : "维您",
+			"keyword": "家居日用"
+		},
+		{
+			"cid" : "40",
+			"className" : "九安",
+			"keyword": "家居日用"
+		},
+		{
+			"cid" : "41",
+			"className" : "伦嘉",
+			"keyword": "家居日用"
+		},
+		{
+			"cid" : "42",
+			"className" : "意锋",
+			"keyword": "家居日用"
+		},
+		{
+			"cid" : "43",
+			"className" : "米菲",
+			"keyword": "家居日用"
+		},
+		{
+			"cid" : "44",
+			"className" : "欧舒丹",
+			"keyword": "家居日用"
+		},
+		{
+			"cid" : "45",
+			"className" : "Do ideas",
+			"keyword": "家居日用"
+		},
+		{
+			"cid" : "46",
+			"className" : "万事利",
+			"keyword": "家居日用"
+		},
+		{
+			"cid" : "47",
+			"className" : "博洋家纺",
+			"keyword": "家居日用"
+		},
+		{
+			"cid" : "48",
+			"className" : "可爱客",
+			"keyword": "家居日用"
+		}
+	]
+}

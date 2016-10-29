@@ -1,0 +1,109 @@
+.main-title{
+	background: #fff;
+}
+.title-left{
+	width: 250px;
+	height: 100%;
+	background: url(../images/bg/txt-bg.gif) repeat;
+}
+.title-left dl dd{
+	position: relative;
+	top: -34px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	color: #eeafce;
+}
+.title-right{
+	width: 713px;
+	padding: 20px;
+}
+.title-right h1{
+	margin: 0;
+	line-height: 36px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	color: #333;
+}
+.title-right p{
+	line-height: 24px;
+	font-size: 16px;
+	color: #333;
+}
+.title-right .title-mes{
+	text-align: center;
+	font-size: 13px;
+	color: #888;
+}
+.article-txt{
+	padding: 20px;
+	font-size: 13px;
+}
+.article-txt .daoyu{
+	margin: 20px 0;
+	text-align: left;
+	color: #333;
+}
+.article-txt .txt_c{
+	margin-top: 10px;
+	text-align: center;
+}
+.title-img strong{
+	display: block;
+	margin-top: 20px;
+	font-size: 16px;
+	line-height: 22px;
+	color: #333;
+}
+.title-img .imgtxt{
+	text-align: center;
+}
+.tit-list{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 350px;
+	padding: 20px;
+	background: #fff;
+}
+.tit-list h2{
+    margin-bottom: 10px;
+    line-height: 36px;
+    font-weight: bold;
+    font-size: 18px;
+    color:#333;
+}
+.tit-list ul li{
+	float: left;
+	width: 200px;
+	margin-right: 55px;
+	text-align: center;
+}
+.tit-list ul li p{
+	margin: 10px 0;
+	font-size: 15px;
+}
+.title-btn{
+	display: block;
+	position: absolute;
+	top: 50%;
+	width: 30px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	background: #333;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+.title-btn:hover{
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.pre-btn{
+	left: 20px;
+}
+.next-btn{
+	right: 20px;
+}

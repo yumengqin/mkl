@@ -1,0 +1,74 @@
+{
+	"reason": "success",
+	"result":[
+		{
+			"cid": "01",
+			"classImg":"http://www.wm18.com/data/afficheimg/1429134254077145381.jpg",
+			"bannerimg":"http://www.wm18.com/data/afficheimg/1429136710030933878.jpg",
+			"className":"美容护肤",
+			"classify":[
+				{
+					"classifyN":"脸部保养",
+					"classifyNum": 99
+				},
+				{
+					"classifyN":"精油香氛",
+					"classifyNum": 20
+				},
+				{
+					"classifyN":"身体护理",
+					"classifyNum": 37
+				}
+			]
+		},
+		{
+			"cid": "02",
+			"classImg":"http://www.wm18.com/data/afficheimg/1429060614762777922.jpg",
+			"bannerimg":"http://www.wm18.com/data/afficheimg/1429060487045759816.jpg",
+			"className": "健康养生",
+			"classify":[
+				{
+					"classifyN":"瘦身纤体",
+					"classifyNum": 0
+				},
+				{
+					"classifyN":"美容养肤",
+					"classifyNum": 1
+				},
+				{
+					"classifyN":"健康食品",
+					"classifyNum": 14
+				},
+				{
+					"classifyN":"基础营养",
+					"classifyNum": 21
+				}
+			]
+		},
+		{
+			"cid": "03",
+			"classImg":"http://www.wm18.com/data/afficheimg/1429060007926477706.jpg",
+			"bannerimg":"http://www.wm18.com/data/afficheimg/1429060250979523815.jpg",
+			"className": "家居日用",
+			"classify":[
+				{
+					"classifyN":"全家健康",
+					"classifyNum": 7
+				},
+				{
+					"classifyN":"服饰配件",
+					"classifyNum": 32
+				},
+				{
+					"classifyN":"家饰家纺",
+					"classifyNum": 21
+				},
+				{
+					"classifyN":"家居用品",
+					"classifyNum": 92
+				}
+			]
+		}
+	],
+	"error_code":0
+}

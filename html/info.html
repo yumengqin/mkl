@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/info.css">
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="../js/jquery.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
+		<script src="../js/public.js"></script>
+		<script src="../js/login.js"></script>
+		<script src="../js/info.js"></script>
+	</head>
+
+	<body>
+		<!-- sear_box搜索框 -->
+		<div class="sear_box">
+			<div class="input-group has-feedback">
+	     		<input type="text" class="form-control" placeholder="热门搜索：洁面 控油 祛痘">
+	     		<ul class="sear-list p0"></ul>
+	     		<span class="input-group-btn">
+	       			<button class="btn btn-default p0" type="button">搜索</button>
+	     		</span>
+	     		<span class="glyphicon glyphicon-remove-circle form-control-feedback"></span>
+	     		<span class="clo"></span>
+	   		 </div>
+		</div>
+
+		<!--右侧栏right_bar-->
+		<ul class="right_bar pl0">
+			<li class="service">
+				<a href="###"><img src="../images/side/rightSider_01.png" alt=""></a>
+			</li>
+			<li class="tel">
+				<img src="../images/side/rightSider_02.png" alt="">
+				<img class="lastImg" src="../images/side/kefu1.png" alt="">
+			</li>
+			<li class="back">
+				<a href="###"><img src="../images/side/rightSider_03.png" alt=""></a>
+			</li>
+		</ul>
+
+		<div class="content-wrapper">
+			<!--遮罩层mask-->
+			<div class="mask mask-car">
+				<div class="mask-blank"></div>
+				<div class="mask-mes">
+					<a href="###"><span class="mask-close index-bg"></a></span>
+					<p class="index-bg">商品已成功加入购物车</p>
+					<p class="mask-btn">
+						<a href="shopCar.html" class="go">去结算</a>
+						<a href="javascript:;" class="aigin">继续购物</a>
+					</p>
+				</div>
+			</div>
+			<div class="mask login-mask">
+				<div class="mask-blank"></div>
+				<div class="login-mes login-main">
+					<h2><span class="left">请登录</span><a href="###" class="right">×</a></h2>
+					<div class="login-box">
+						<div class="form-group">
+							<span class="input-icon  index-bg form-control-feedback"></span>
+							<input type="text" class="form-control userName" placeholder="用户名">
+						</div>
+						<div class="form-group">
+							<span class="input-icon  index-bg form-control-feedback"></span>
+							<input type="password" class="form-control pw" placeholder="密码">
+						</div>
+						<div class="form-group">
+							<span class="input-icon  index-bg form-control-feedback"></span>
+							<input type="password" class="form-control pwA" placeholder="请重新输入密码">
+						</div>
+						<div class="rember"> 
+							<input id='che_box' type="checkbox">
+							<label for="che_box">记住密码</label>
+							<a href="regist.html">注册</a>
+						</div>
+						<div style="overflow:hidden">
+							<input type="submit" class="btn-lg btn-danger col-md-12 sure" value="登&ensp;&ensp;&ensp;录">
+						</div>
+						<div class="error_mes index-bg">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mask sub-mask">
+				<div class="mask-blank"></div>
+				<div class="sub-mes">
+					<a href="###"><span class="mask-close index-bg"></a></span>
+					<p>提交成功，我们会尽快答复您！<br>您也可以在我的账户——我的问答中查看回复！</p>
+					<a href="my.html?question" class="sub-sure">确定</a>
+				</div>
+			</div>
+			<!-- content主体 -->
+			<div class="content">
+				<!--side_bar侧边栏-->
+				<div class="side_bar">
+					<ul class="pl0 side_bar_ul">
+						<li><a href="../index.html">首&nbsp;页</a></li>
+						<li><a href="###">品牌系列</a>
+							<ul class="brandmenu pl0">
+							</ul>
+						</li>
+						<li><a href="prolist.html?美容护肤">美容护肤</a></li>
+						<li><a href="prolist.html?健康养生">健康养生</a></li>
+						<li><a href="prolist.html?家居日用">家居日用</a></li>
+						<li><a href="###">积分换购</a></li>
+						<li><a href="###" class="lh22">VIP<br>会员专区</a></li>
+						<li><a href="###">电子刊物</a></li>
+						<li><a href="###">关于麦考林</a></li>
+					</ul>
+				</div>
+				<!--header头部-->
+				<div class="header">
+					<h1 class="logo p0 col-md-6"><img src="../images/logo/newlogo.png" alt=""></h1>
+					<div class="col-md-6">
+						<ul class="header_list p0">
+							<li>
+								<a class="h_ser index-bg" href="javascript:;"></a>
+							</li><span>|</span>
+							<li><a class="h_login" href="login.html">登录</a></li><span>|</span>
+							<li><a class="h_register" href="regist.html">注册</a></li><span>|</span>
+							<li><a class="h_out" href="javascript:;">退出</a></li><span>|</span>
+							<li><a class="h_my" href="javascript:;">我的账户</a></li><span>|</span>
+							<li>
+								<a class="h_car index-bg" href="shopCar.html"></a>
+								<b class="h_carnum">0</b>
+							</li>
+							<li><img src="../images/logo/tel-call.png" alt=""></li>
+						</ul>
+					</div>
+				</div>
+				<!--商品详情-->
+				<div class="content_info">
+					<div class="info-item clear">
+						<div class="info-left left">
+							<div class="banImg">
+								<img src="" />
+								<div class="cloudzoom-blank">
+									<div class="cloudzoom-bg"></div>
+									<div class="cloudzoom-lens">
+										<img src="" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="row smallImg"></div>
+							<div class="bigImg">
+								<img src="" />
+							</div>
+						</div>
+						<div class="info-right right">
+							<div class="share">
+								<ul class="share-list p0 clear">
+									<li>
+										<a href="#"></a>
+									</li>
+									<li>
+										<a href="#"></a>
+									</li>
+									<li>
+										<a href="#"></a>
+									</li>
+									<li>
+										<a href="#"></a>
+									</li>
+									<li>
+										<a href="#"></a>
+									</li>
+									<li>
+										<a href="#"></a>
+									</li>
+								</ul>
+								<div class="share_go">
+									<h3>分享到</h3>
+									<ul class="clear">
+										<li><a href="#">一键分享</a></li>
+										<li><a href="#">QQ空间</a></li>
+										<li><a href="#">新浪微博</a></li>
+										<li><a href="#">百度云收藏</a></li>
+										<li><a href="#">微信</a></li>
+										<li><a href="#">人人网</a></li>
+										<li><a href="#">腾讯微博</a></li>
+										<li><a href="#">百度相册</a></li>
+										<li><a href="#">开心网</a></li>
+										<li><a href="#">腾讯朋友</a></li>
+										<li><a href="#">百度贴吧</a></li>
+										<li><a href="#">豆瓣网</a></li>
+										<li><a href="#">百度新首页</a></li>
+										<li><a href="#">QQ好友</a></li>
+										<li><a href="#">和讯微博</a></li>
+										<li><a href="#">百度中心</a></li>
+									</ul>
+									<p><a href="#">更多...</a></p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="info-item2 clear">
+						<div class="info-sel left">
+							<ul class="sel-list p0">
+								<li><a href="javascript:;">商品信息</a></li>
+								<li><a href="javascript:;">商品评论</a></li>
+								<li><a href="javascript:;">商品问答</a></li>
+							</ul>
+							<div class="info-introduce clear">
+								
+							</div>
+						</div>
+						<div class="info-friend right">
+							<ul class="relate-list info-friend-list p0"></ul>
+							<ul class="history-list info-friend-list p0"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer">
+				<div class="foot-item1">
+					<ul class="foot-list1">
+						<li>
+							<a href="javascript:;"></a><span>100%正品保证</span></li>
+						<li>
+							<a href="javascript:;"></a><span>专业在线客服</span></li>
+						<li>
+							<a href="javascript:;"></a><span>满99包邮</span></li>
+					</ul>
+					<div class="foot-list2">
+						<ul>
+							<h3>新手指南</h3>
+							<li><a href="###">新会员注册</a></li>
+							<li><a href="###">购物演示</a></li>
+							<li><a href="###">常见问题</a></li>
+						</ul>
+						<ul>
+							<h3>付款方式</h3>
+							<li><a href="###">银行卡支付</a></li>
+							<li><a href="###">支付宝支付</a></li>
+							<li><a href="###">余额支付</a></li>
+						</ul>
+						<ul>
+							<h3>售后服务</h3>
+							<li><a href="###">退换货政策</a></li>
+							<li><a href="###">退换货流程</a></li>
+							<li><a href="###">退款说明</a></li>
+							<li><a href="###">发票说明</a></li>
+						</ul>
+						<ul>
+							<h3>特色服务</h3>
+							<li><a href="###">贵宾专区</a></li>
+							<li><a href="###">电子刊物</a></li>
+							<li><a href="###">在线客服</a></li>
+						</ul>
+						<ul>
+							<h3>麦考林生活家</h3>
+							<li>
+								<img src="../images/foot/dingyue.jpg" alt="">
+							</li>
+						</ul>
+						<ul>
+							<h3>麦考林服务号</h3>
+							<li>
+								<img src="../images/foot/fuwu.jpg" alt="">
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="foot-item2">
+					<ul>
+						<li><a href="###">关于麦考林</a></li>
+						<li><a href="###">INVESTOR RELATIONS</a></li>
+						<li><a href="###">联系我们</a></li>
+						<li><a href="###">服务中心</a></li>
+						<li><a href="###">加入我们</a></li>
+					</ul>
+					<p>
+						<img src="../images/foot/newicon.png" alt=""> 沪ICP备05003606号Copyright©2011-2015 MecoxLane Inc. All Rights Reserved
+					</p>
+					<p>
+						<a href="###"><img src="../images/foot/evaluate.jpg" alt=""></a>
+						<a href="###"><img src="../images/foot/beian.png" alt="">沪公网安备 31010402000234号</a>
+					</p>
+				</div>
+			</div>
+	</body>
+
+</html>

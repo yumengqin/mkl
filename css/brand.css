@@ -1,0 +1,91 @@
+.brand_ban{
+	position: relative;
+	height: 400px;
+	margin-bottom: 20px;
+}
+.brand_ban .intro{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 263px;
+	padding: 30px;
+	background: #000;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.brand_ban .intro h2{
+	font-size: 16px;
+	line-height: 32px;
+	color: #fff;
+}
+.brand_ban .intro p{
+	font-size: 14px;
+	line-height: 24px;
+	color: #fff;
+}
+.sell-well{
+	overflow: hidden;
+	height: auto;
+	padding-top: 66px;
+	margin-bottom: 20px;
+	background: url(../images/bg/newRexiao.gif) no-repeat;
+}
+.sell-well-list li{
+	float: left;
+}
+.sell-well-list a{
+	display:block;
+	padding: 10px 0 0 0;
+}
+.sell-well-list .left{
+	width: 406px;
+}
+.sell-well-list .left img{
+	width: 406px;
+}
+.sell-well-list .right{
+	width: 566px;
+}
+.sell-well-list .right img{
+	width: 278px;
+}
+.product-tit{
+	overflow: hidden;
+	height: 38px;
+	line-height:38px;
+	padding:0 20px;
+	border-radius: 5px 5px 0 0;
+	color: #fff;
+	background: #535353;
+}
+.product-tit span{
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+	color:#fff;
+}
+.product-tit .range{
+	height:38px;
+	margin: 0;
+	margin-left: 20px;
+}
+.range li{
+	float: left;
+}
+.range li a{
+	display: block;
+	line-height: 38px;
+	padding: 0 10px;
+	font-size:14px;
+	color: #fff;
+}
+.range li a:hover{
+	text-decoration: none;
+}
+.pro-item{
+	overflow: hidden;
+	height: auto;
+	padding: 30px 0 0 25px;
+	background:#fff;
+}

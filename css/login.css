@@ -1,0 +1,49 @@
+.login-content{
+	width: 100%;
+	overflow: hidden;
+	background: url(../images/bg/login-reg.gif) no-repeat center top;
+}
+.login{
+	position: relative;
+	width: 80%;
+	height: 722px;
+	margin:  0 auto;
+}
+.login-tit{
+	padding-top: 10px;
+}
+.login-box{
+	position: absolute;
+	top: 100px;
+	right: 5%;
+	width: 340px;
+	height: 506px;
+}
+.login-bg{
+	position: absolute;
+	width: 340px;
+	height: 440px;
+	background: #fff;
+	border: 1px solid #fff;
+	opacity: 0.6;
+}
+.login-main{
+	z-index: 10;
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	width: 280px;
+}
+.login-main h3{
+	font-size: 12px;
+	line-height: 18px;
+	margin-bottom: 10px;
+	color: #333;
+}
+.login-main h3 a{
+	color: #fea417;
+	text-decoration: underline;
+}
+.login-main h3 a:last-child{
+	float: right;
+}

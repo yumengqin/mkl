@@ -1,0 +1,150 @@
+/*****品牌及分类******/
+
+.pro-brand{
+	padding: 0 20px;
+	background:#fff;
+}
+.pro-brand h2{
+	margin: 0;
+	padding: 12px 0;
+	font-size: 14px;
+	border-bottom: 2px solid #ECEAE6;
+}
+.pro-brand h2 span{
+	margin: 0 5px;
+}
+.pro-brand h2 a{
+	font-size: 12px;
+}
+.pro-brand .pro-brand-list{
+	margin: 0;
+}
+.pro-brand .pro-brand-list li{
+	overflow: hidden;
+	height: auto;
+	line-height: 42px;
+	border-bottom: 1px solid #ECEAE6;
+}
+.pro-brand .pro-brand-list li strong{
+	float: left;
+	height: 100%;
+	margin-right: 23px;
+}
+.pro-brand .pro-brand-list li p{
+	float: right;
+	width: 90%;
+}
+.pro-brand .pro-brand-list li i{
+	font-style: normal;
+}
+.pro-brand .pro-brand-list li b{
+	font-weight: normal;
+}
+.pro-brand .pro-brand-list li a:hover i{
+	color: #e8254a;
+}
+.pro-brand .pro-brand-list li .more:hover .jiao{
+	border-color: #e8254a transparent transparent transparent; 
+}
+.pro-brand .pro-brand-list li .more-hide:hover .jiao{
+	border-color: transparent transparent #e8254a transparent; 
+}
+.pro-brand-list .more,.pro-brand-list .more-hide{
+	float: right;
+	color: #fea417;
+}
+.pro-brand-list .more-hide{
+	display: none;
+}
+.pro-brand-list .jiao{
+	float: right;
+	border-width: 5px;
+	border-style: solid;
+	
+}
+.pro-brand-list .more .jiao{
+	margin: 18px 0 0 5px;
+	border-color: #fea417 transparent transparent transparent; 
+}
+.pro-brand-list .more-hide .jiao{
+	margin: 14px 0 0 5px;
+	border-color: transparent transparent #fea417 transparent; 
+}
+.pro-brand .pro-brand-list li span{
+	display: inline-block;
+	width: 120px;
+	margin: 0 40px 0 5px;
+}
+/*****商品列表*****/
+.goods_list{
+	height: auto;
+	margin-top: 20px;
+}
+.goods_list h2{
+    padding: 0 20px;
+    font-size: 15px;
+    height: 38px;
+    line-height: 38px;
+    background: #535353;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+}
+.goods_list h2 span{
+	float: left;
+	line-height: 38px;
+}
+.subnaver{
+	margin: 0 0 0 20px;
+	display: inline-block;
+}
+.subnaver li{
+	float: left;
+}
+.subnaver li a{
+	position: relative;
+	display: block;
+	width: 70px;
+	padding-left: 15px;
+	height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    color: #fff;
+}
+.subnaver li a b{
+	position: absolute;
+	display: inline-block;
+	right: 5px;
+    width: 7px;
+    height: 6px;
+    background: url(../images/bg/sico2.png) no-repeat;
+}
+.subnaver li .active{
+	text-decoration: none;
+	background: #fff;
+	color: #333;
+}
+.subnaver li a .down{
+	top: 15px;
+	background-position: 0 0;
+}
+.subnaver li a .down-active{
+	background-position: -20px -25px;
+}
+.subnaver li a .up-down{
+	top: 12px;
+	height: 15px;
+	background-position: -10px 0;
+}
+.subnaver li a .up-down-active1{
+	background-position: 0px -25px;
+}
+.subnaver li a .up-down-active2{
+	background-position: -10px -25px;
+}
+
+/*****商品列表*****/
+.classPro-list{
+	padding: 30px 0 0 25px;
+	background: #fff;
+}
+.classPro-list ul

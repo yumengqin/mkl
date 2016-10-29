@@ -1,0 +1,268 @@
+
+/***********banner**********/
+.banner{
+	position: relative;
+	height: 351px;
+	overflow: hidden;
+	width: 100%;
+}
+.banner_list{
+	z-index: 1;
+	position: relative;
+	width: 500%;
+	height: 360px;
+}
+.banner_list li{
+	position: absolute;
+	float: left;
+	left: 0;
+	width: 20%;
+	list-style: none;
+}
+.banner_list li a{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 351px;
+}
+.banner_list li a img{
+	display: none;
+}
+.banner_list li div{
+	display: none;
+	width: 100%;
+	height: 36px;
+}
+.banner_list li .on{
+	animation: move1 .5s;
+}
+@keyframes move1{
+	0%{transform: rotateX(-45deg) rotateZ(1.5deg) scale(0.95);}
+	100%{transform: rotateX(0deg) rotateZ(0deg) scale(1);}
+}
+
+.btn_list{
+	z-index: 50;
+	position: absolute;
+	width: 940px;
+	bottom: 0;
+	left: 21px;
+}
+.btn_list li{
+	float: left;
+	width: 188px;
+	height: 6px;
+	background: #fff;
+}
+.btn_list li:hover{
+	cursor: pointer;
+	background: #e1472f ;
+}
+.btn_list .select{
+	background: #e1472f ;
+}
+.ban_btn{
+	display: none;
+	z-index: 2;
+	position: absolute;
+	width: 42px;
+	height: 43px;
+	top: 50%;
+	margin-top: -21px;
+}
+.ban_btn:hover{
+	background-color: #e1472f !important;
+}
+.btn_left{
+	left: 0;
+	background: url(../images/banner/slider-left-arrow.png) no-repeat center #393939;
+}
+.btn_right{
+	right: 0;
+	background: url(../images/banner/slider-right-arrow.png) no-repeat center #393939;
+}
+
+/*************main**************/
+
+.main{
+	overflow: hidden;
+	margin-top: 20px;
+}
+.main-item-list{
+	margin-bottom: 0;
+}
+.main-item-list li{
+	position: relative;
+}
+.main-item-list li a{
+	padding-right: 4px;
+	height: 100%;
+	margin-bottom: 4px;
+}
+.main-item-list li a,.main-item-list2 li a{
+	display: block;
+	overflow: hidden;
+}
+.main-item-list li a img,.main-item-list2 li a img{
+	padding: 0;
+	transition: all .4s;
+}
+.main-item-list2 .wimg{
+	padding-right: 4px;
+}
+.main-item-list .wimg img,.main-item-list2 .wimg img{
+	width: 100%;
+	height: 100%;
+}
+.main-item-list li div{
+	z-index: 10;
+	height: 196px;
+	position: relative;
+	padding: 3% 3% 2% 4%;
+	color: #969696;
+	background: #fff;
+	transition: all .5s;
+}
+.main-item-list li div h2{
+	height: 34px;
+	margin:0 0 5px 0;
+	line-height: 22px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+}
+.main-item-list li div p{
+	margin: 0;
+	height: 122px;
+}
+.main-item-list li div strong{
+	font-size: 16px;
+	font-weight: normal;
+	color: #d10048;
+}
+.main-item-list li div i{
+	font-size: 12px;
+	font-style: normal;
+	text-decoration: line-through;
+	color: #9e9e9e;
+}
+.main-item-list li div b{
+	font-size: 12px;
+	font-weight: normal;
+	color: #d10048;
+}
+.main-item-list li .jiao{
+	z-index: 20;
+	position: absolute;
+	top: 43px;
+	right: -28px;
+	border-width: 14px;
+	border-style: solid;
+	border-color: transparent transparent transparent #fff;
+	transition: all .5s;
+}
+.main-item-list li a:hover div p{
+	color: #fff;
+}
+.main-item-list li a:hover .move-left{
+	margin-left: -5px;
+}
+.main-item-list li #info_box{
+	z-index: 2000;
+	position: absolute;
+	width: 0;
+	height: 190px;
+	top: 0;
+	left: 0;
+	padding: 0;
+	opacity: 0;
+}
+.main-item-list li #info_box a{
+	padding-right: 0;
+}
+#info_box .top_img{
+	width: 100%;
+	height: 193px;
+}
+#info_box a:hover{
+	text-decoration: none;
+}
+#info_box .info_word{
+	padding: 20px 20px 10px;
+	background: #fff;
+	color: #888;
+}
+#info_box .info_word h2{
+	font-size: 14px;
+	line-height: 28px;
+	color: #666;
+}
+#info_box .info_word .word{
+	height: 100px;
+	line-height: 22px;
+	color: #888;
+}
+#info_box .info_word .look{
+	margin-top: 10px;
+	height: 30px;
+}
+#info_box .info_word .look span{
+	float: right;
+	margin-right: 10px;
+	line-height: 30px;
+	color: #888;
+}
+#info_box .info_word .look .add_car{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-position: 0 -112px;
+}
+#info_box .info_word ul{
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+	overflow: hidden;
+}
+#info_box .info_word ul li{
+	float: left;
+	width: 33.3%;
+	text-align: center;
+}
+#info_box .info_word ul li img{
+	width: 80px;
+	height: 95px;
+}
+#info_box .form-control-feedback{
+	display: none;
+	top: 8px;
+	right: 10px;
+	font-size: 20px;
+	color: #555;
+	opacity: 0.6;
+}
+#info_box .word_close{
+	display: block;
+	position: absolute;
+	width: 34px;
+	height: 34px;
+	top: 8px;
+	right: 10px;
+	opacity: 0;
+}
+#active-list li h2{
+	color: #888;
+}
+#active-list li h2:hover{
+	color: #666;
+}
+#active-list li p{
+	height: 100px;
+ 	color: #888;
+}
+#active-list li p:hover{
+	color: #666;
+}
+#active-list a img{
+	height: 193px;
+}

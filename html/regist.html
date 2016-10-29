@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>麦考林--引领健康美丽的生活</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/regist.css">
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/jquery.cookie.js"></script>
+	
+</head>
+<body>
+
+<!--login-content主体-->
+<div class="regist-content">
+	<div class="regist">
+		<h2 class="regist-tit p0">
+			<a href="javascript:;"></a><img src="../images/logo/newlogo.png" alt="">
+		</h2>
+		<div class="regist-box">
+			<div class="regist-bg"></div>
+			<div class="regist-main">
+				<h3>
+					<span>已有麦考林账号？</span>
+					<a href="login.html">立即登录</a>
+					<a href="javascript:;">贵宾激活</a>
+				</h3>
+				<form class="regist-sub">
+					<div class="form-group">
+						<span class="input-icon  index-bg form-control-feedback"></span>
+						<input type="text" class="form-control tel" placeholder="请输入手机号">
+						<div class="mes index-bg"></div>
+					</div>
+					<div class="form-group">
+						<span class="input-icon  index-bg form-control-feedback"></span>
+						<div class="code">
+							<p></p>
+							<b class="change">换一张</b>
+						</div>
+						<input type="text" class="form-control codeM" placeholder="验证码">
+						<div class="mes index-bg"></div>
+					</div>
+					<div class="form-group">
+						<span class="input-icon  index-bg form-control-feedback"></span>
+						<input type="password" class="form-control pw" placeholder="密码">
+						<div class="mes index-bg"></div>
+					</div>
+					<div class="form-group">
+						<span class="input-icon  index-bg form-control-feedback"></span>
+						<input type="password" class="form-control pwA" placeholder="确认密码">
+						<div class="mes index-bg"></div>
+					</div>
+					<div class="rember"> 
+						<input id='che_box' type="checkbox">
+						<label for="che_box">我已阅读并同意</label>
+						<a href="###">《麦考林用户注册协议》</a>
+					</div>
+					<div style="overflow:hidden">
+						<input type="submit" class="btn-lg btn-danger col-md-12 sub" value="注&ensp;&ensp;&ensp;册">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!--底部footer-->
+	<div class="footer">
+		<div class="foot-item1">
+			<ul class="foot-list1">
+				<li><a href="javascript:;"></a><span>100%正品保证</span></li>
+				<li><a href="javascript:;"></a><span>专业在线客服</span></li>
+				<li><a href="javascript:;"></a><span>满99包邮</span></li>
+			</ul>
+			<div class="foot-list2">
+				<ul>
+					<h3>新手指南</h3>
+					<li><a href="###">新会员注册</a></li>
+					<li><a href="###">购物演示</a></li>
+					<li><a href="###">常见问题</a></li>
+				</ul>	
+				<ul>
+					<h3>付款方式</h3>
+					<li><a href="###">银行卡支付</a></li>
+					<li><a href="###">支付宝支付</a></li>
+					<li><a href="###">余额支付</a></li>
+				</ul>	
+				<ul>
+					<h3>售后服务</h3>
+					<li><a href="###">退换货政策</a></li>
+					<li><a href="###">退换货流程</a></li>
+					<li><a href="###">退款说明</a></li>
+					<li><a href="###">发票说明</a></li>
+				</ul>	
+				<ul>
+					<h3>特色服务</h3>
+					<li><a href="###">贵宾专区</a></li>
+					<li><a href="###">电子刊物</a></li>
+					<li><a href="###">在线客服</a></li>
+				</ul>
+				<ul>
+					<h3>麦考林生活家</h3>
+					<li>
+						<img src="../images/foot/dingyue.jpg" alt="">
+					</li>
+				</ul>	
+				<ul>
+					<h3>麦考林服务号</h3>
+					<li>
+						<img src="../images/foot/fuwu.jpg" alt="">
+					</li>
+				</ul>	
+			</div>
+		</div>
+		<div class="foot-item2">
+			<ul>
+				<li><a href="###">关于麦考林</a></li>
+				<li><a href="###">INVESTOR RELATIONS</a></li>
+				<li><a href="###">联系我们</a></li>
+				<li><a href="###">服务中心</a></li>
+				<li><a href="###">加入我们</a></li>
+			</ul>
+			<p>
+				<img src="../images/foot/newicon.png" alt="">
+				 沪ICP备05003606号Copyright©2011-2015 MecoxLane Inc. All Rights Reserved
+			</p>
+			<p>
+				<a href="###"><img src="../images/foot/evaluate.jpg" alt=""></a>
+				<a href="###"><img src="../images/foot/beian.png" alt="">沪公网安备 31010402000234号</a>
+			</p>
+		</div>	
+	</div>
+
+	<!--提示框 box-wrap-->
+	<div class="box-wrap">
+		<div class="box_inner">
+			<span class="glyphicon glyphicon-remove-circle form-control-feedback"></span>
+			<span class="close"></span>
+			<p>请同意麦考林用户服务协议</p>
+			<a href="javascript:;" class="sure">确定</a>
+		</div>
+	</div>
+</div>
+</body>
+
+<script>
+	var loginFlag = true;
+	var t = $(window).height()/2
+	createCode();
+	test();
+
+	$(".change").click(function(){
+		createCode();
+	});
+
+	$(".regist-sub").submit(function(event) {
+		test();
+		if(!loginFlag){
+			return false;
+		}
+		if(!$("#che_box").prop("checked")){
+			$(".box-wrap").show();
+			$(".box_inner").animate({
+				top: t
+			});
+			return false;
+		}
+		if(localStorage.getItem("user")){
+			var obj = JSON.parse(localStorage.getItem("user"));
+		}
+		else{
+			var obj = {};
+		}
+		console.log(obj);
+		obj[$(".tel").val()] = "pw="+$(".pw").val();
+		var objToStr = JSON.stringify(obj);
+		localStorage.setItem("user",objToStr);
+		sessionStorage.setItem("pre",$(".tel").val());
+		sessionStorage.setItem("now",$(".tel").val());
+		window.location = "my.html?mess";
+		return false;
+	});
+	$(".close").click(function(){
+		$(".box-wrap").hide();
+	})
+	$(".sure").click(function(){
+		$(".box-wrap").hide();
+	})
+
+	//输入框获取焦点清空
+	$(".form-group > input").focus(function(){
+		loginFlag = true;
+	});
+
+	function test(){
+		//验证手机号码
+		$(".tel").blur(function() {
+			testTel($(this).val())
+		});
+		//验证验证码
+		$(".codeM").blur(function() {
+			testCode($(this).val());
+		});
+		//验证密码
+		$(".pw").blur(function() {
+			testPw($(this).val());
+		});
+		//验证确认密码
+		$(".pwA").blur(function() {
+			testPwAgain($(this).val());
+		});
+		$(".sub").click(function(){
+			testTel($(".tel").val());
+			testCode($(".codeM").val());
+			testPw($(".pw").val());
+			testPwAgain($(".pwA").val());
+		})
+	}
+	function testTel(phone){
+		if(!phone){
+			$(".form-group").eq(0).find(".mes").html("手机用来登录不能为空");
+			loginFlag = false;	
+		}
+		else if(!(/^1[3578]\d{9}$/.test(phone))){ 
+        	$(".form-group").eq(0).find(".mes").html("手机号码格式错误");	
+        	loginFlag = false;		
+   		} 
+   		else if($.cookie("user")){
+   			var data = JSON.parse($.cookie("user"));
+   			if(data[$(".tel").val()]){
+	   			$(".form-group").eq(0).find(".mes").html("该手机号码已注册过");	
+	        	loginFlag = false;		
+	        }
+   			else{
+   				$(".form-group").eq(0).addClass("has-success");
+   				$(".form-group").eq(0).find(".mes").html("");
+   			}
+   		}
+   		else{
+   			$(".form-group").eq(0).addClass("has-success");
+   			$(".form-group").eq(0).find(".mes").html("");
+   		}
+
+	}
+	function testCode(code){
+		if(!code){
+			$(".form-group").eq(1).find(".mes").html("验证码不能为空");
+			createCode();
+			loginFlag = false;	
+		}
+		else if(!($(".code p").text().toLowerCase()==code.toLowerCase())){
+			$(".form-group").eq(1).find(".mes").html("验证码输入错误");
+			createCode();
+			loginFlag = false;
+		}
+		else{
+			$(".form-group").eq(1).addClass("has-success");
+			$(".form-group").eq(1).find(".mes").html("");
+		}
+		// console.log($(".code p").text().toLowerCase(),code.toLowerCase());
+	}
+	function testPw(pw){
+		if(!pw){
+			$(".form-group").eq(2).find(".mes").html("密码不能为空");
+			loginFlag = false;	
+		}
+		else if(pw.length<6){
+			$(".form-group").eq(2).find(".mes").html("密码太短啦，不足六个字符");
+			loginFlag = false;	
+		}
+		else if(pw.length > 16){
+			$(".form-group").eq(2).find(".mes").html("密码太长了啦，不能超过16个字符");
+			loginFlag = false;	
+		}
+		else if(!(/^[0-9a-zA-Z]{6,16}$/.test(pw)) || !(/\d/g.test(pw)) || !(/[a-z]/gi.test(pw))){ 
+			$(".form-group").eq(2).find(".mes").html("请使用字母、数字组合的字符");
+        	loginFlag = false;	
+   		} 
+   		else{
+   			$(".form-group").eq(2).addClass("has-success");
+   			$(".form-group").eq(2).find(".mes").html("");
+   		}
+	}
+	function testPwAgain(pw){
+		if(!pw){
+			$(".form-group").eq(3).find(".mes").html("确认密码不能为空");
+			loginFlag = false;	
+		}
+		else if(! (pw == $(".form-group").eq(2).find("input").val())){
+			$(".form-group").eq(3).find(".mes").html("确认密码不一致");
+			loginFlag = false;	
+		}
+		else{
+			$(".form-group").eq(3).addClass("has-success");
+			$(".form-group").eq(3).find(".mes").html("");
+		}
+	}
+	function createCode(){
+	    var arr = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','0','1','2','3','4','5','6','7','8','9'];
+	    var str = "";
+        for(var i = 0 ; i < 4 ; i ++ ){
+            str += "<strong style='color:"+setCodeColor()+";font-size:"+setFontSize()+";transform: rotate("+setRotate()+")'>"+arr[Math.floor(Math.random() * arr.length)]+"</strong>";
+        }
+       	$(".code p").html(str)
+       	var bg = setCodebg();
+       	$(".code p").css({
+       		background: bg
+       	});
+       	console.log($(".code p").text());
+	}
+	function setCodebg(){
+		var bgcolor = '';
+		bgcolor = "rgba("+parseInt(Math.random()*255)+","+parseInt(Math.random()*255)+","+parseInt(Math.random()*255)+","+0.9+")";
+		return bgcolor;
+	}
+	function setCodeColor(){
+		var color = "#";
+		var arr = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"];
+		for(var i = 0 ; i < 6 ; i ++){
+			color += arr[Math.floor(Math.random() * arr.length)];
+		}
+		return color;
+	}
+	function setFontSize(){
+		var s = parseInt(Math.random()*10)+14+"px";
+		return s;
+	}
+	function setRotate(){
+		var s = parseInt(Math.random()*80)+"deg";
+		return s
+	}
+</script>
+</html>

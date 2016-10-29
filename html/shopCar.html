@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>麦考林-我的购物车</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/shopCar.css" />
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="../js/jquery.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/login.js"></script>
+		<script src="../js/public.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
+	</head>
+
+	<body>
+		<div class="sear_box">
+			<form>
+				<div class="input-group has-feedback">
+		     		<input type="text" class="form-control" placeholder="热门搜索：洁面 控油 祛痘">
+		     		<ul class="sear-list p0"></ul>
+		     		<span class="input-group-btn">
+		       			<button class="btn btn-default p0" type="button">搜索</button>
+		     		</span>
+		     		<span class="glyphicon glyphicon-remove-circle form-control-feedback"></span>
+		     		<span class="clo"></span>
+		   		 </div>
+			</form>
+		</div>
+
+		<div class="content-wrapper">
+			<!-- content主体 -->
+			<div class="content">
+				
+				<!--登录弹出框-->
+				<div class="mask login-mask">
+					<div class="mask-blank"></div>
+					<div class="login-mes login-main">
+						<h2><span class="left">请登录</span><a href="###" class="right">×</a></h2>
+						<div class="login-box">
+							<div class="form-group">
+								<span class="input-icon  index-bg form-control-feedback"></span>
+								<input type="text" class="form-control userName" placeholder="用户名">
+							</div>
+							<div class="form-group">
+								<span class="input-icon  index-bg form-control-feedback"></span>
+								<input type="password" class="form-control pw" placeholder="密码">
+							</div>
+							<div class="form-group">
+								<span class="input-icon  index-bg form-control-feedback"></span>
+								<input type="password" class="form-control pwA" placeholder="请重新输入密码">
+							</div>
+							<div class="rember"> 
+								<input id='che_box' type="checkbox">
+								<label for="che_box">记住密码</label>
+								<a href="regist.html">注册</a>
+							</div>
+							<div style="overflow:hidden">
+								<input type="submit" class="btn-lg btn-danger col-md-12 sure" value="登&ensp;&ensp;&ensp;录">
+							</div>
+							<div class="error_mes index-bg">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--side_bar侧边栏-->
+				<div class="side_bar">
+					<ul class="pl0 side_bar_ul">
+						<li><a href="../index.html">首&nbsp;页</a></li>
+						<li><a href="###">品牌系列</a>
+							<ul class="brandmenu pl0">
+								
+							</ul>
+						</li>
+						<li><a href="prolist.html?美容护肤">美容护肤</a></li>
+						<li><a href="prolist.html?健康养生">健康养生</a></li>
+						<li><a href="prolist.html?家居日用">家居日用</a></li>
+						<li><a href="###">积分换购</a></li>
+						<li><a href="###" class="lh22">VIP<br>会员专区</a></li>
+						<li><a href="###">电子刊物</a></li>
+						<li><a href="###">关于麦考林</a></li>
+					</ul>
+				</div>
+				<!--header头部-->
+				<div class="header">
+					<h1 class="logo p0 col-md-6"><img src="../images/logo/newlogo.png" alt=""></h1>
+					<div class="col-md-6">
+						<ul class="header_list p0">
+							<li>
+								<a class="h_ser index-bg" href="javascript:;"></a>
+							</li><span>|</span>
+							<li><a class="h_login" href="login.html">登录</a></li><span>|</span>
+							<li><a class="h_register" href="regist.html">注册</a></li><span>|</span>
+							<li><a class="h_out" href="javascript:;">退出</a></li><span>|</span>
+							<li><a class="h_my" href="javascript:;">我的账户</a></li><span>|</span>
+							<li>
+								<a class="h_car index-bg" href="shopCar.html"></a>
+								<b class="h_carnum">0</b>
+							</li>
+							<li><img src="../images/logo/tel-call.png" alt=""></li>
+						</ul>
+					</div>
+				</div>
+				<!--mainTab-->
+				<div class="mainTab">
+					<h3 class="vivo-head-ico">购物车</h3>
+					<table class="tab">
+						<thead>
+							<tr>
+								<th class="sel">
+									<input type="checkbox" />
+								</th>
+								<th class="pro-name">商品名称</th>
+								<th class="pro-price">价格</th>
+								<th class="pro-num">数量</th>
+								<th class="pro-tot">小计（元）</th>
+								<th class="pro-del">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+					<p class="pLine">您还没有挑选商品哦，<a href="../index.html">返回首页</a></p>
+					<div class="main-foot">
+						<input type="checkbox" class="selAll" id="selAll" />
+						<label for="selAll">全选</label>
+						<a href="javascript:;" class="go-on">继续购物</a>
+						<span>|</span>
+						<a href="javascript:;" class="empty">清空购物车中所有商品</a>
+						<div class="main-foot-right right">
+							<div class="left">
+								<p>共<b class="b-num">0</b>商品&nbsp;&nbsp;商品应付总额（不包含运费）：<b class="b-price">￥0</b></p>
+								<p>(满99元包邮，不含EMS及港澳台)</p>
+							</div>
+							<input type="button" value="立即计算" class="right go-order" />
+						</div>
+					</div>
+				</div>
+				<!--底部-->
+				<div class="footer">
+					<div class="foot-item1">
+						<ul class="foot-list1">
+							<li>
+								<a href="javascript:;"></a><span>100%正品保证</span></li>
+							<li>
+								<a href="javascript:;"></a><span>专业在线客服</span></li>
+							<li>
+								<a href="javascript:;"></a><span>满99包邮</span></li>
+						</ul>
+						<div class="foot-list2">
+							<ul>
+								<h3>新手指南</h3>
+								<li><a href="###">新会员注册</a></li>
+								<li><a href="###">购物演示</a></li>
+								<li><a href="###">常见问题</a></li>
+							</ul>
+							<ul>
+								<h3>付款方式</h3>
+								<li><a href="###">银行卡支付</a></li>
+								<li><a href="###">支付宝支付</a></li>
+								<li><a href="###">余额支付</a></li>
+							</ul>
+							<ul>
+								<h3>售后服务</h3>
+								<li><a href="###">退换货政策</a></li>
+								<li><a href="###">退换货流程</a></li>
+								<li><a href="###">退款说明</a></li>
+								<li><a href="###">发票说明</a></li>
+							</ul>
+							<ul>
+								<h3>特色服务</h3>
+								<li><a href="###">贵宾专区</a></li>
+								<li><a href="###">电子刊物</a></li>
+								<li><a href="###">在线客服</a></li>
+							</ul>
+							<ul>
+								<h3>麦考林生活家</h3>
+								<li>
+									<img src="../images/foot/dingyue.jpg" alt="">
+								</li>
+							</ul>
+							<ul>
+								<h3>麦考林服务号</h3>
+								<li>
+									<img src="../images/foot/fuwu.jpg" alt="">
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="foot-item2">
+						<ul>
+							<li><a href="###">关于麦考林</a></li>
+							<li><a href="###">INVESTOR RELATIONS</a></li>
+							<li><a href="###">联系我们</a></li>
+							<li><a href="###">服务中心</a></li>
+							<li><a href="###">加入我们</a></li>
+						</ul>
+						<p>
+							<img src="../images/foot/newicon.png" alt=""> 沪ICP备05003606号Copyright©2011-2015 MecoxLane Inc. All Rights Reserved
+						</p>
+						<p>
+							<a href="###"><img src="../images/foot/evaluate.jpg" alt=""></a>
+							<a href="###"><img src="../images/foot/beian.png" alt="">沪公网安备 31010402000234号</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		var user = "";
+		var tabStr = "";
+		var obj = null;
+		var selprice = 0;
+		var selnum = 0;
+		var height = $(window).height()/2;
+		var user = "";
+		if(sessionStorage.getItem("now")){
+			user = sessionStorage.getItem("now");
+			var total = parseInt(localStorage.getItem("total"+user)) || 0;
+			//购物车cookie
+			if(localStorage.getItem("cart"+user)){
+				var obj = JSON.parse(localStorage.getItem("cart"+user));
+				$(".pLine").hide();
+			}
+			else{
+				var obj = {};
+				$(".pLine").show();
+			}
+		}
+		else{
+			var total =parseInt(sessionStorage.getItem("total")) || 0;
+			//购物车cookie
+			if(sessionStorage.getItem("cart")){
+				var obj = JSON.parse(sessionStorage.getItem("cart"));
+				$(".pLine").hide();
+			}
+			else{
+				var obj = {};
+				$(".pLine").show();
+			}
+		}
+		$(".h_carnum").html(total);
+
+		//所有用户
+		if(localStorage.getItem("user")){
+			var objUser = JSON.parse(localStorage.getItem("user"));
+			if(sessionStorage.getItem("pre")){
+				$(".userName").val(sessionStorage.getItem("pre"));
+			}
+		}
+		else{
+			var objUser = {};
+		}
+		
+		getCart();
+		//获取左侧品牌的数据
+		$.get('../brandlist.json', function(data) {
+			var data = data.result;
+			var brand = "<div></div>";
+			$.each(data,function(index, el) {
+				if(el.banner){
+					brand += "<li><a href='brand.html?"+el.cid+"'>"+el.className+"</a></li><div></div>";
+				}
+				$(".brandmenu").html(brand);
+			});
+		});
+		$(".go-on").click(function() {
+			window.history.go(-1);
+		});
+		$(".empty").click(function() {
+			$(".tab tbody tr").remove();
+			total = 0;
+			$(".h_carnum").html(total);
+			var objToStr = JSON.stringify(obj);
+			if(user){
+				localStorage.removeItem("cart" + user);
+				localStorage.removeItem("total" + user);
+			}
+			else{
+				sessionStorage.removeItem("cart" + user);
+				sessionStorage.removeItem("total" + user);
+			}
+			$(".pLine").show();
+		});
+		//点击立即结算
+		$(".go-order").click(function() {
+			if(user == ""){
+				$(".login-mask").show();
+				$(".login-mes").animate({
+					top: height-$(".login-mes").height()/2
+				})
+			}
+		});
+		
+		$(".login-mes h2 .right").click(function(){
+			$(".login-mask").fadeOut(50,function(){$(".login-mes").css("top","-200px")});
+		})
+		//点击全选（****这里****）
+		$(".selAll").click(function() {
+			$(".tab input[type='checkbox']").prop("checked", $(this).prop("checked"));
+			getMes();
+		});
+		$(".sel input[type='checkbox']").click(function() {
+			$(".mainTab input[type='checkbox']").prop("checked", $(this).prop("checked"));
+			getMes();
+		});
+		$(".tab tbody").on("click", "input[type='checkbox']", function() {
+			getMes();
+		});
+
+		$(".tab > tbody").on("click", ".sub", function() {
+			var num = parseInt($(this).prev().val());
+			if (num > 1) {
+				total--;
+				num--;
+				$(".h_carnum").html(total);
+				$(this).prev().val(num);
+				$(this).parent().next().html("￥" + num * parseInt($(this).parent().prev().html().replace("￥", "")))
+				obj[$(this).parents("tr").attr("pid")] = num;
+				var objToStr = JSON.stringify(obj);
+				if(user){
+					localStorage.setItem("cart" + user,objToStr);
+					localStorage.setItem("total" + user,total);
+				}
+				else{
+					sessionStorage.setItem("cart",objToStr);
+					sessionStorage.setItem("total",total);
+				}
+			}
+		});
+		$(".tab > tbody").on("click", ".add", function() {
+			var num = parseInt($(this).next().val());
+			console.log(num)
+			total++;
+			num++;
+			$(".h_carnum").html(total);
+			$(this).next().val(num);
+			$(this).parent().next().html("￥" + num * parseInt($(this).parent().prev().html().replace("￥", "")))
+			obj[$(this).parents("tr").attr("pid")] = num;
+			var objToStr = JSON.stringify(obj);
+			if(user){
+				localStorage.setItem("cart" + user,objToStr);
+				localStorage.setItem("total" + user,total);
+			}
+			else{
+				sessionStorage.setItem("cart",objToStr);
+				sessionStorage.setItem("total",total);
+			}
+		});
+		//点击删除     (如果没有商品显示空)
+		$(".tab > tbody").on("click", ".del", function() {
+			if($(this).parent().find(".sure-box")){
+				$(this).parent().find(".sure-box").remove();
+			}
+			var sureStr = "<div class='sure-box'><p>确定删除该商品？</p>"+
+			              "<p><input type='button' class='del-sure del-btn' value='确定'><input type='button' class='del-out del-btn' value='取消'></p>"+
+			              "<span></span><i></i></div>";
+			$(this).parent().append(sureStr);
+			$(this).parent().find(".sure-box").animate({
+				top: "-27px"
+			});
+			$(this).parent().on("click",".del-sure",function(){
+				var num = parseInt($(this).parents("tr").find("input[type='text']").val());
+				total -= num;
+				console.log(total);
+				delete(obj[$(this).parents("tr").attr("pid")]);
+				var objToStr = JSON.stringify(obj);
+				$(".h_carnum").html(total);
+				if(user){
+					localStorage.setItem("cart" + user,objToStr);
+					localStorage.setItem("total" + user,total);
+				}
+				else{
+					sessionStorage.setItem("cart",objToStr);
+					sessionStorage.setItem("total",total);
+				}
+				$(this).parents("tr").remove();
+				$(this).parent().parent().remove();
+				if (!$(".tab tbody tr").html()) {
+					$(".pLine").show();
+					if(user){
+						localStorage.removeItem("cart" + user,objToStr);
+						localStorage.removeItem("total" + user,total);
+					}
+					else{
+						sessionStorage.removeItem("cart",objToStr);
+						sessionStorage.removeItem("total",total);
+					}
+				}
+			});
+			$(this).parent().on("click",".del-out",function(){
+				$(this).parent().parent().remove();
+			});
+		});
+
+		function getMes() {
+			selnum = 0;
+			selprice = 0;
+			$(".tab tbody input[type='checkbox']").each(function() {
+				if ($(this).prop("checked")) {
+					selnum += parseInt($(this).parent().siblings().find("input[type='text']").val());
+					selprice += parseFloat($(this).parent().siblings(".tr-price").html().replace("￥", ""));
+				}
+			});
+			$(".b-price").html("￥" + selprice);
+			$(".b-num").html(selnum);
+		}
+
+		function getCart() {
+			$.get("../proinfo.json", function(data) {
+				var data = data.result;
+				$.each(data, function(index, el) {
+					if (el.pid in obj) {
+						tabStr += "<tr pid='" + el.pid + "'>" +
+							"<td><input type='checkbox'></td>" +
+							"<td><dl><a href='info.html?" + el.pid + "'>" +
+							"<dt><img src='" + el.showimg + "'></dt>" +
+							"<dd><h4>" + el.title + "</h4><p>" + el.pno + "</p></dd>" +
+							"<dl></td>" +
+							"<td>" + el.price + "</td>" +
+							"<td>" +
+							"<input type='button' value='+' class='add'>" +
+							"<input readonly='readonly' type='text' value='" + obj[el.pid] + "' class='shownum'>" +
+							"<input type='button' value='-' class='sub'>" +
+							"</td>" +
+							"<td class='tr-price'>￥" + parseFloat(el.price.replace("￥", "")) * parseInt(obj[el.pid]) + "</td>" +
+							"<td><a href='javascript:;' class='del'>X删除</a></td>" +
+							"</tr>";
+					}
+				});
+				$(".mainTab > .tab > tbody").html(tabStr);
+			});
+		}
+	</script>
+
+</html>

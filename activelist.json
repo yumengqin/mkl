@@ -1,0 +1,30 @@
+{
+	"reason": "success",
+	"result":[
+		{
+			"aid": "01",
+			"activeImg":"http://www.wm18.com/data/afficheimg/1452448940781909668.jpg",
+			"activeTitle":"麦考林全新开启生活家计划",
+			"activeinfo" : "倾心于生活情趣的点滴，是为生活家。即将迎来20周岁的女性电商品牌麦考林，开启“生活家计划”，从一个健康与美丽商品和服务的提供者，转..."
+		},
+		{
+			"aid": "02",
+			"activeImg":"http://www.wm18.com/data/afficheimg/1463687620078610356.jpg",
+			"activeTitle":"爱&梦想 成就美丽的财富人生",
+			"activeinfo" : "这是源于一个忙碌却不善表达的父亲对女儿的承诺，为治愈自己重病的女儿，而寻寻觅觅足迹遍布全球，只为寻找到天然安全的健康保证…"
+		},
+		{
+			"aid": "03",
+			"activeImg":"http://www.wm18.com/data/afficheimg/1452450503184506277.jpg",
+			"activeTitle":"与爱同行 探访冬虫夏草生产地",
+			"activeinfo" : "八年的坚持资捐，八年的爱心传递，麦考林健康事业部创始人吴先生携麦考林精英团队，不远万里再次奔赴青海玉树，只为将爱心带给需要的人…"
+		},
+		{
+			"aid": "04",
+			"activeImg":"http://www.wm18.com/data/afficheimg/1434072880517743206.jpg",
+			"activeTitle":"转型力作 两大新品耀世呈现",
+			"activeinfo" : "本次美博会期间刚刚完成战略转型的麦考林对外重磅推出了两款主打的自有产品：美容新品“秘密花园玫瑰鲜活水”萃取于植物细胞水，不添加外来..."
+		}
+	],
+	"error_code":0
+}

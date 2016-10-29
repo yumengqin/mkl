@@ -1,0 +1,33 @@
+.active-main{
+	padding: 20px;
+	font-size: 13px;
+	background: #fff;
+}
+.active-tit{
+	margin: 0;
+	line-height: 36px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+.active-mes{
+	text-align: center;
+	font-size: 13px;
+	color: #888;
+}
+.active-item{
+	padding: 20px 100px;
+}
+.active-item .txt-tit{
+	display: block;
+	margin: 20px 0;
+	font-size: 16px;
+}
+.active-item p{
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+.active-item .imgtxt{
+	text-align: center;
+}
